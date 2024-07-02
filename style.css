@@ -867,6 +867,61 @@ body._touch .menu-list > li._active .menu-arrow {
   right: 1.3rem;
 }
 
+/* ----------------------------success--------------------------- */
+.success {
+  background-color: var(--block-background-color);
+  padding-top: 4.5rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+}
+
+.success-background {
+  background-image: url(images/glare.png);
+  width: 100%;
+  height: 100%;
+}
+
+.success__content {
+}
+
+.success__content-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.success__content-text:first-child {
+  margin-bottom: 2.5rem;
+}
+
+.success__content-img {
+  margin-bottom: 9.3rem;
+}
+
+.top-content {
+  border: 0.3rem solid #36853b;
+  border-radius: 2rem;
+  padding: 2rem 2.65rem;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 0 10px 0 rgba(79, 183, 86, 0.7);
+  background: rgba(0, 0, 0, 0.8);
+
+  right: 9%;
+  left: 9%;
+  top: 75%;
+  position: absolute;
+}
+
+.top-content-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
 /* ----------------------------------footer-------------------------------------------- */
 .footer {
   display: flex;
