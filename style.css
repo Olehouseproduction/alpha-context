@@ -83,7 +83,6 @@ body,
   */
 p {
   --paragraphMarginBottom: 24px;
-
   margin-block: 0;
 }
 
@@ -631,7 +630,7 @@ body._touch .menu-list > li._active .menu-arrow {
   position: absolute;
   left: -3.5rem;
   content: "";
-  background-image: url("./images/vacancy.svg");
+  background-image: url("images/icons/vacancy.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 2.5rem;
@@ -650,7 +649,7 @@ body._touch .menu-list > li._active .menu-arrow {
   position: absolute;
   left: -3.5rem;
   content: "";
-  background-image: url(./images/price.svg);
+  background-image: url("images/icons/price.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 2.5rem;
@@ -701,14 +700,14 @@ body._touch .menu-list > li._active .menu-arrow {
 }
 
 .accordion-title::after {
-  content: url(./images/more.svg);
+  content: url("images/icons/more.svg");
   position: absolute;
   right: 1.6rem;
   transition: opacity 0.3s ease;
 }
 
 .accordion-title::before {
-  content: url(./images/close.svg);
+  content: url("images/icons/close.svg");
   position: absolute;
   right: 1.6rem;
   opacity: 0;
@@ -778,6 +777,7 @@ body._touch .menu-list > li._active .menu-arrow {
 /* --------------------career-------------- */
 .career {
   background-color: var(--block-background-color-2);
+  padding-top: 4.3rem;
 }
 
 .career__description {
@@ -922,7 +922,129 @@ body._touch .menu-list > li._active .menu-arrow {
   margin-bottom: 2rem;
 }
 
-/* ----------------------------------footer-------------------------------------------- */
+/* ------------------contacts------------------------------- */
+.contacts {
+  padding-top: 2.6rem;
+  padding-bottom: 4.2;
+  background-color: var(--block-background-color-2);
+}
+
+.contacts__title {
+  margin-bottom: 1.6rem;
+  padding: 1.5rem 0;
+}
+
+.contacts__buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.contacts__button {
+  /* color: var(--heading-color); */
+  color: #ffffff;
+  background-color: var(--block-background-color);
+  width: 100%;
+  height: 3rem;
+  border: 0.2rem solid #999999;
+  border-radius: 0.5rem;
+
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+.contacts__list {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 250%;
+  color: #fff;
+  padding-left: 4.2rem;
+  margin-bottom: 4.2rem;
+}
+
+.contacts__item:last-child {
+  text-decoration: underline;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.contacts__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -4.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.item-phone::before {
+  background-image: url("images/icons/contacts-phone.svg");
+}
+
+.item-mail::before {
+  background-image: url("images/icons/contacts-mail.svg");
+}
+
+.item-address::before {
+  background-image: url("images/icons/contacts-address.svg");
+}
+
+.contacts__social-media {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4.2rem;
+}
+
+/* .social-media .icon {
+  transition: all 0.1s ease;
+} */
+
+.contacts__social-media .sm-youtube:hover .icon {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(43%) saturate(7491%) hue-rotate(358deg) brightness(87%)
+    contrast(137%);
+  /* fill: #ff0201; */
+}
+
+.contacts__social-media .sm-vk:hover .icon {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(2709%) hue-rotate(200deg) brightness(99%)
+    contrast(106%);
+  /* fill: #0077fe; */
+}
+
+.social-media .sm-telegram:hover .icon {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(57%) saturate(1470%) hue-rotate(173deg) brightness(94%)
+    contrast(89%);
+  /* fill: #40a7e3; */
+}
+
+/* https://angel-rs.github.io/css-color-filter-generator/ */
+
+/* --------------------map----------------------------- */
+.map {
+  width: 100%;
+  background-color: var(--block-background-color-2);
+}
+
+/* --------------------footer----------------------------- */
 .footer {
   display: flex;
   flex-direction: column;
@@ -932,7 +1054,9 @@ body._touch .menu-list > li._active .menu-arrow {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.55;
-  margin: 4.1rem 0 5.1rem 0;
+  margin: 0 0 5.1rem 0;
+  padding-top: 4.1rem;
+  background-color: var(--block-background-color-2);
 }
 
 .footer-copyright {
