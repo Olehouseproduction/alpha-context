@@ -440,7 +440,7 @@ body._touch .menu-list > li._active .menu-arrow {
   height: 54rem;
   width: 100%;
   padding-top: 4rem;
-  background-image: url(/images/banner.webp);
+  background-image: url("images/banner.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
